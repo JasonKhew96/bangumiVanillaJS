@@ -94,7 +94,7 @@ home-card:hover {
 
 table {
   width: inherit;
-  margin: 4px 0px;
+  margin: 4px 2px;
   border: 1px solid #aaaaaa;
   border-radius: 4px;
   border-spacing: 0;
@@ -180,7 +180,17 @@ input:selection {
   border: 1px solid #000000;
 }
 
-@media only screen and (max-width: 600px) {
+.page-span {
+  display: inline-block;
+  width: 82px;
+  text-align: center;
+}
+
+span {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 800px) {
   home-cards {
     flex-direction: column;
   }

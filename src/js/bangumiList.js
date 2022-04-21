@@ -159,7 +159,7 @@ export class BangumiList extends HTMLElement {
       this._page.value +
         " / " +
         Math.ceil(this._filteredData.value.length / this._itemPerPage)
-    );
+    ).addClass("page-span");
     pageGroup.appendChild(pageStatus1);
     const nextBtn = Wrapper.generate("button", "next");
     nextBtn.element.addEventListener("click", () => {
