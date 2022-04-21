@@ -18,13 +18,13 @@ export class Navigator {
     });
 
     const homeCards = HomeCards.generate()
-      .addCard("https://via.placeholder.com/512", "哔哩哔哩", () => {
+      .addCard("./image/bilibili.png", "哔哩哔哩", () => {
         this._router.navigate("/bilibili");
       })
-      .addCard("https://via.placeholder.com/512", "哔哩哔哩(东南亚)", () => {
+      .addCard("./image/bilibili_sea.webp", "哔哩哔哩(东南亚)", () => {
         this._router.navigate("/bilibili_sea");
       })
-      .addCard("https://via.placeholder.com/512", "巴哈姆特動畫瘋", () => {
+      .addCard("./image/animad.png", "巴哈姆特動畫瘋", () => {
         this._router.navigate("/animad");
       });
     const appHome = AppHome.generate();
