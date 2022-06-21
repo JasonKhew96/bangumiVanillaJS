@@ -31,7 +31,16 @@ export class Navigator {
     appHome.appendChild(homeCards);
 
     const footer = AppFooter.generate();
-    footer.setText("Built with vanilla JS by @JasonKhew96");
+    fetch("./data/update.json")
+      .then((res) => res.json())
+      .then((data) => {
+        let t = new Date(0);
+        t.setUTCSeconds(data.ts);
+        footer.setText(
+          "Built with vanilla JS by @JasonKhew96 on " +
+            t.toLocaleString("en-US")
+        );
+      });
 
     this._router.on("/", () => {
       document.title = "Bangumi | Home";
