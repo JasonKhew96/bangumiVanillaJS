@@ -1,5 +1,5 @@
 # Bangumi
 
-Test bangumi page, written in VanillaJS. W.I.P.
+Test bangumi page, written in VanillaJS
 
-To be merged into JasonKhew96/bangumi
+merged into JasonKhew96/bangumi
